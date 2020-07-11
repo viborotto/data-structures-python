@@ -56,4 +56,12 @@ sppos = data.find(' ', atpos)
 host = data[atpos+1:sppos]
 print(host)
 
-# formatation operator
+# formatation operator, %d int, %g float, %s string
+camel = 42
+print('During %d years I saw %g %s.' % (3, 0.1, 'camelos'))
+
+#Exercise: extrac string after ':' and convert into float
+y = 'X-DSPAM-Confidence:0.8475'
+index_find = y.find(':')
+index_value = y[index_find+1:]
+print(float(index_value))
